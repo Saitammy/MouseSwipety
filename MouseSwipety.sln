@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "MouseSwipety", "MouseSwipety.pyproj", "{1AE7ED5A-170D-4DCF-915A-85A30435BE3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AE7ED5A-170D-4DCF-915A-85A30435BE3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AE7ED5A-170D-4DCF-915A-85A30435BE3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A537EEC-88C7-4F3C-8B97-F6C583F88AFC}
+	EndGlobalSection
+EndGlobal
