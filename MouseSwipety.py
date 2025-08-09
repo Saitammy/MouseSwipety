@@ -15,16 +15,17 @@ mouse = Controller()
 last_x = mouse.position[0]
 last_y = mouse.position[1]
 last_coor = (mouse.position[0], mouse.position[1])
+half_position = ()
     
 def trackMouse():
     final_hor = tk.Label(empty_window, text = "No mouse movement", font = ("Arial", 35), fg = "blue")
-    final_hor.place(relx = 0.5, rely = 0.5, anchor = "center")
+    final_hor.place(relx = 0.5, rely = 0.4, anchor = "center")
     final_ver = tk.Label(empty_window, text = "No Vertical Movement", font = ("Arial", 35), fg = "blue")
-    final_ver.place(relx = 0.5, rely = 0.6, anchor = "center")
+    final_ver.place(relx = 0.5, rely = 0.5, anchor = "center")
     global last_x, last_y, running, last_coor
     
-    coor_display = tk.Label(empty_window, text = f"{mouse.position[0]}, {mouse.position[1]}", font = ("Arial", 35), fg = "black")
-    coor_display.place(relx = 0.5, rely = 0.7, anchor = "center")
+    coor_display = tk.Label(empty_window, text = f"X - {mouse.position[0]}, Y - {mouse.position[1]}", font = ("Arial", 35), fg = "black")
+    coor_display.place(relx = 0.5, rely = 0.6, anchor = "center")
     
     while running:
         # Tracking X Coordinates
@@ -48,7 +49,7 @@ def trackMouse():
         last_y = current_y
         
         # Tracking Coordinates
-        coor_display.config(text=f"{mouse.position[0]}, {mouse.position[1]}")
+        coor_display.config(text=f"X - {mouse.position[0]}, Y - {mouse.position[1]}")
 
         
         time.sleep(0.01)
@@ -59,7 +60,7 @@ empty_window.title('MouseSwipety')
 empty_window.geometry("750x750")
 
 testing_label = tk.Label(empty_window, text = "Mouse Action", font = ("Arial", 70))
-testing_label.place(relx=0.5, rely=0.35, anchor="center")
+testing_label.place(relx=0.5, rely=0.2, anchor="center")
 
 quit_button = tk.Button(empty_window, text = "Quit", command = buttonClick, width = 20, height = 2)
 quit_button.pack(side = tk.BOTTOM, pady = 10, padx = 10, anchor = "se")
